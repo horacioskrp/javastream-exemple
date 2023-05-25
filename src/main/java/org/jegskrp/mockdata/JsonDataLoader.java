@@ -16,7 +16,7 @@ import java.util.List;
 public class JsonDataLoader {
 
     public static List<User> loaDataFormJsonFile() throws IOException{
-        InputStream inputStream = Resources.getResource("users.json").openStream();
+        InputStream inputStream = Resources.getResource("user.json").openStream();
         String json = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
         Type listDataType = new TypeToken<ArrayList<User>>(){}.getType();
 
